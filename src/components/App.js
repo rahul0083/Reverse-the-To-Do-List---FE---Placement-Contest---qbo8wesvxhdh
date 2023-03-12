@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
 import '../styles/App.css';
-// import ToDo from './ToDo';
+import ToDo from './ToDo';
 
-function ToDo() {
-  return (<tr>
-    <td>
-      <p>{todo.id}</p>
-    </td>
-    <td>
-      <input />
-    </td>
-    <td>
-      <p>{todo.createdAt}</p>
-    </td>
-  </tr>)
-}
+// function ToDo() {
+//   return (<tr>
+//     <td>
+//       <p>{todoId}</p>
+//     </td>
+//     <td>
+//       <input />
+//     </td>
+//     <td>
+//       <p>{createdAt}</p>
+//     </td>
+//   </tr>)
+// }
 
 
 function App() {
@@ -36,16 +36,14 @@ function App() {
       <table>
         <tbody>
         {todos.map((todo) => (
-            <ToDo
-              key={todo.id}
-              todoId={todo.id}
-              createdAt={todo.createdAt}
-              text={todo.text}
+            <ToDo key={todo.id} todoId={todo.id} createdAt={todo.createdAt}
             />
           ))}
         </tbody>
       </table>
     </div>
+    
+
   )
 }
 
