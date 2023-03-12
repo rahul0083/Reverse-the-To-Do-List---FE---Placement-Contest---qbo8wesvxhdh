@@ -7,7 +7,7 @@ function ToDo({ todoId, createdAt, text }) {
       <td>
         <input type="text" value={text} />
       </td>
-      <td>{createdAt.toLocaleString()}</td>
+      <td>{createdAt}</td>
     </tr>
   );
 }
