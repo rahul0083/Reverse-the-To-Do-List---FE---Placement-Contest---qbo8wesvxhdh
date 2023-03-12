@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
 import '../styles/App.css';
-import ToDo from './ToDo';
+// import ToDo from './ToDo';
 
-// function ToDo() {
-//   return (<tr>
-//     <td>
-//       <p>id</p>
-//     </td>
-//     <td>
-//       <input />
-//     </td>
-//     <td>
-//       <p>createdAt</p>
-//     </td>
-//   </tr>)
-// }
+function ToDo() {
+  return (<tr>
+    <td>
+      <p>{todo.id}</p>
+    </td>
+    <td>
+      <input />
+    </td>
+    <td>
+      <p>{todo.createdAt}</p>
+    </td>
+  </tr>)
+}
 
 
 function App() {
